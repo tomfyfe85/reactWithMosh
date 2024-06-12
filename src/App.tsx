@@ -1,14 +1,9 @@
-import Alert from "./components/Alert";
+import Button from "./components/Button";
 function App() {
-  let items = ["New York", "San Fran", "Tokyo", "London", "Paris"];
-  const onSelectedItem = (item: string) => {
-    console.log(item);
-  };
+
   return (
     <>
-      <Alert>
-        Hello <span><h1>WORLD</h1></span>
-      </Alert>
+      <Button type="success" name="BUTTON" onClick={() => console.log('clicked')} />
     </>
   );
 }
