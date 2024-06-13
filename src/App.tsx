@@ -2,20 +2,14 @@ import { useState } from "react";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 function App() {
-  const [alert, setAlert] = useState(null);
-  
-  const handleClick = () => {
-    console.log("clicked");
-    setAlert(true);
-  };
-  console.log(alert)
+  const [alert, setAlert] = useState(false);
+
   return (
     <>
-      {alert ?  <Alert>PANIC</Alert> : null}
-      <Button type="danger" onClick={handleClick}>
+      {alert ? <Alert onClose={() => setAlert(false)}>PANIC</Alert> : null}
+      <Button type="danger" onClick={() => setAlert(true)}>
         my button
       </Button>
-      
     </>
   );
 }
