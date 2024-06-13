@@ -1,13 +1,13 @@
 interface Props {
-  type: "primary" | "secondary" | "danger";
-  name: string;
+  children: string;
   onClick: () => void;
+  type?: "primary" | "secondary" | "danger";
 }
-const Button = ({ type = "primary", name, onClick }: Props) => {
+const Button = ({ type = "primary", children, onClick }: Props) => {
   return (
     <>
       <button type="button" className={"btn btn-" + type} onClick={onClick}>
-        {name}
+        {children}
       </button>
     </>
   );

@@ -1,1 +1,19 @@
 1) Create a bootstrap button component 
+
+2)When user clicks the button, an alert appears. 
+There should be an X button to close the alert.
+
+bootstrap site- alerts, dismissing, 
+add dismissing class and button 
+
+button renders alert on click
+useState - click sets state to true,
+if true render alert
+
+
+ALERT
+add close button
+add close button class
+
+app handleClick
+returns Alert
