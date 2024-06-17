@@ -1,19 +1,7 @@
-1) Create a bootstrap button component 
+- like button
+make like component 
+shold have an onClick prop
 
-2)When user clicks the button, an alert appears. 
-There should be an X button to close the alert.
-
-bootstrap site- alerts, dismissing, 
-add dismissing class and button 
-
-button renders alert on click
-useState - click sets state to true,
-if true render alert
-
-
-ALERT
-add close button
-add close button class
-
-app handleClick
-returns Alert
+1- get heart icon from React icons/boot strap
+2- onClick log 'clicked' to the console
+3- heart should turn either white  to red and visa versa onClickLike
