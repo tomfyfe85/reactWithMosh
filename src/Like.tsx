@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsSuitHeart } from "react-icons/bs";
-import styles from "./Like.module.css";
+import { IoMdHeart } from "react-icons/io";
 
 interface Props {
   onClick: () => void;
@@ -14,9 +14,11 @@ const Like = ({ onClick }: Props) => {
     setLiked(!liked);
   };
 
+  if (liked) return <IoMdHeart onClick={clicked} color="#FF0000" size={20} />;
+
   return (
     <div>
-      <BsSuitHeart onClick={clicked} className={liked ? styles.liked : ""} />
+      <BsSuitHeart onClick={clicked} color="#000000" size={20} />
     </div>
   );
 };

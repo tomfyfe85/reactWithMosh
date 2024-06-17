@@ -1,5 +1,5 @@
 import Button from "./components/Button/Button";
-import Like from "./components/Like/Like";
+import Like from "./Like";
 
 function App() {
   // const [alert, setAlert] = useState(false);
