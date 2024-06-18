@@ -5,3 +5,10 @@ shold have an onClick prop
 1- get heart icon from React icons/boot strap
 2- onClick log 'clicked' to the console
 3- heart should turn either white  to red and visa versa onClickLike
+
+- updating useState
+1)click button, update player name to something else
+
+2)complete 
+
+3)

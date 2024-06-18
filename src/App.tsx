@@ -1,20 +1,17 @@
 import { useState } from "react";
-import Cart from "./components/Cart";
-import NavBar from "./components/NavBar";
-
 function App() {
-  // const [alert, setAlert] = useState(false);
-  const [cartItems, setCartItems] = useState(['Product1', 'Product2'])
-  console.log(cartItems);
+  const [pizza, setPizza] = useState({ name: "Marg", toppings: ["Cheese"] });
+
+  const handleClick = () => {
+    setPizza({ ...pizza, toppings: [...pizza.toppings, "Pep"] });
+  };
+  console.log(pizza);
+
   return (
-    <>
-      <div>
-      <NavBar cartItemsCount={cartItems.length}/>
-      <Cart cartItems={cartItems} onClear={() => setCartItems([])} />
-      </div>
-    </>
+    <div>
+      <button onClick={handleClick}>Click Me</button>
+    </div>
   );
 }
 
 export default App;
-0;
