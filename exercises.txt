@@ -11,4 +11,4 @@ shold have an onClick prop
 
 2)complete 
 
-3)
+3)Change quantity of product 2 to 2
