@@ -3,7 +3,7 @@ import ExpandableText from "./components/ExpandableText";
 function App() {
   return (
     <div>
-      <ExpandableText maxChar={23}>
+      <ExpandableText >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse,
         voluptate facilis ab corrupti atque eveniet deleniti repudiandae placeat
         voluptates neque pariatur exercitationem aliquam fuga libero dolor enim
