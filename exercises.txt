@@ -12,3 +12,33 @@ shold have an onClick prop
 2)complete 
 
 3)Change quantity of product 2 to 2
+
+-expandable text component
+(use lorem ipsum)
+make an ExpandableText component
+use maxChars prop to configure amount of text shown
+eg maxChar={10}
+
+add a more/less button
+
+more displays entire text,
+less displays 10 chars 
+
+get lorem ?
+make component file
+use children prop
+prop to pass lorem into expandableText component
+
+state to hold true/false for toggle
+get length of lorem 
+true - button name = less
+     - maxChar={lorem.length}
+
+false - button name = more
+      - maxChar={10}
+
+type =lorem()
+
+
+
+
