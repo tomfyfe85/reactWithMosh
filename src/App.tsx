@@ -1,20 +1,22 @@
 import { useEffect, useRef, useState } from "react";
 import ExpandableText from "./components/ExpandableText";
 import Form from "./components/Form";
+import ProductList from "./ProductList";
 function App() {
-  const ref = useRef<HTMLInputElement>(null);
-  
-  // afterRender
-  useEffect(() => {
-    if (ref.current) ref.current.focus();
-  });
+  const [category, setCategory] = useState("");
 
-  useEffect(() => {
-    document.title = "My App";
-  });
   return (
     <div>
-      <input ref={ref} type="text" className="form-control" />
+      <select
+        title="select"
+        className="form-select"
+        onChange={(event) => setCategory(event.target.value)}
+      >
+        <option value=""></option>
+        <option value="Clothing">Clothing</option>
+        <option value="Household">Household</option>
+      </select>
+      <ProductList category={category} />
     </div>
   );
 }
